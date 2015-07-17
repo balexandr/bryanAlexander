@@ -1,0 +1,201 @@
+
+body {
+    background-color:#ECE9BB;
+}
+
+/***** HomePage *****/
+#main {
+    font-family: Arvo;
+}
+
+    #main #top {
+        height: 700px;
+        background: transparent url(/assets/me_01.jpg) no-repeat center center;
+        background-size: cover;
+        position: relative;
+    }
+
+/***** Navigation *****/
+.navbar .container-fluid .navbar-collapse a img {
+    display: block;
+}
+/***** Footer *****/
+#footer {
+    font-family: Arvo;
+    color: #cdccac;
+}
+    #footer .container-fluid{
+    }
+        #footer .container-fluid .row {
+            padding: 10px 30px 00px 30px;
+            background-color: #1f231d;
+        }
+            #footer .container-fluid .row .col-md-4 {
+            }
+                #footer .container-fluid .row .col-md-4 h4 {
+                    font-size: 20px;
+                    padding-bottom: 5px;
+                    font-weight: normal;
+                    border-bottom: 2px dotted #cdccac;
+                }
+                
+                #footer .container-fluid .row .col-md-4 p span.encoded {
+                    unicode-bidi: bidi-override;
+                    direction: rtl;
+                }
+                
+                #footer .container-fluid .row .col-md-4 .social-icons {
+                    padding-top: 50px;
+                }
+                
+                .dotted-line {
+                    width: 100%;
+                    height:2px;
+                    display: block;
+                    border-bottom: 2px dotted #cdccac;
+                }
+                
+                .glyphicon-person {
+                    height: 5px;
+                    width: 5px;
+                    background: image-url("sprite.svg") -200px -15px;
+                }
+                
+                
+                
+                .twitter  {
+                    height: 55px;
+                    width: 55px;
+                    background: image-url("sprite.svg") -2px 0;
+                }
+                    .twitter:hover  {
+                        height: 55px;
+                        width: 55px;
+                        background: image-url("sprite.svg") -2px -55px;
+                    }
+                .instagram  {
+                    height: 55px;
+                    width: 55px;
+                    background: image-url("sprite.svg") -74px 0;
+                }
+                    .instagram:hover  {
+                        height: 55px;
+                        width: 55px;
+                        background: image-url("sprite.svg") -74px -55px;
+                    }
+                .facebook  {
+                    height: 55px;
+                    width: 55px;
+                    background: image-url("sprite.svg") -145px 0;
+                }
+                    .facebook:hover  {
+                        height: 55px;
+                        width: 55px;
+                        background: image-url("sprite.svg") -145px -55px;
+                    }
+                .twitter-small {
+                    height: 18px;
+                    width: 25px;
+                    background: image-url("sprite.svg") -57px -117px;
+                    margin:0px 15px 0px 5px;
+                }
+                .mail-small {
+                    height: 20px;
+                    width: 30px;
+                    background: image-url("sprite.svg") -12px -116px;
+                    margin:0px 15px 0px 5px;
+                }
+                .message-small {
+                    height: 20px;
+                    width: 25px;
+                    background: image-url("sprite.svg") -93px -118px;
+                    margin:0px 15px 0px 5px;
+                }
+                #footer .container-fluid .row .copyright {
+                    font-size: 12px;
+                    font-family: Source Sans Pro;
+                    text-align: center;
+                    padding: 10px 0px 10px 0px;
+                }
+                    #footer .container-fluid .row .copyright .logo-tiny {
+                        height: 35px;
+                        width: 30px;
+                        background: image-url("sprite.svg") -145px -118px;
+                    }
+/***** Bootstrap Overrides *****/
+//Nav
+/* vertically align menu items */
+.navbar {
+    font-family: Source Sans Pro;
+}
+    .navbar .nav li {
+        display: inline-block;
+    }
+    .navbar .nav > li > a {
+      float: none;
+      padding: 10px 10px 10px;
+      color: #777;
+      text-decoration: none;
+      text-shadow: 0 1px 0 white;
+      line-height: 55px;
+    }
+    /* Extend height */
+    .navbar-fixed-top {
+        min-height: 75px;
+    }
+        .navbar-fixed-top .navbar-collapse {
+            max-height: 75px;
+        }
+    .navbar-text {
+        font-size: 20px;
+        color: #1F221D;
+        text-decoration: none;
+        padding-right: 30px;
+    }
+        .navbar-text:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+/* Add spacing */
+.navbar-brand img {
+    margin: -10px 0px 0px 0px;
+}
+/* Make nav transparent */
+.navbar.transparent.navbar-fixed-top {
+   background: rgba(255, 255, 255, 0.8);
+}
+/* Center items */
+.navbar.center {
+    text-align: center;
+    vertical-align: middle;
+}
+    .navbar.center .nav {
+        display:inline-block;
+        float: none;
+    }
+//Forms
+.form-control {
+    border-radius: 0;
+    background-color: #cdccac;
+    color: #000000;
+}
+.form-control::-webkit-input-placeholder {
+    color: #000000;
+}
+.form-control-padding {
+    padding-left: 30px;
+}
+.form-control-feedback {
+    color: #000000;
+    left: 0px;
+    margin-right:20px;
+}
+//Buttons
+.btn-default {
+    border-radius: 0;
+    background-color: #CCC834;
+}
+.btn-default:hover {
+    border-radius: 0;
+    background-color: #dd422a;
+}
