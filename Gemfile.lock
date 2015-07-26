@@ -34,6 +34,7 @@ GEM
     autoprefixer-rails (5.2.1)
       execjs
       json
+    bcrypt (3.1.10)
     bootstrap-sass (3.3.5)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
@@ -215,9 +216,10 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  bcrypt
   bootstrap-sass
   coffee-rails (~> 4.0.0)
-  comfortable_mexican_sofa
+  comfortable_mexican_sofa (~> 1.12.8)
   comfy_blog (~> 1.12.0)
   font-awesome-rails
   jbuilder (~> 2.0)

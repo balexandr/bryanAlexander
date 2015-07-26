@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem 'bcrypt'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
@@ -32,7 +34,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # CMS & Blog Engines
-gem 'comfortable_mexican_sofa'
+gem 'comfortable_mexican_sofa', '~> 1.12.8'
 gem 'comfy_blog', '~> 1.12.0'
 
 # Twitter

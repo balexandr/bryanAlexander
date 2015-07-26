@@ -1,6 +1,6 @@
 
 body {
-    background-color:#ECE9BB;
+    background-color:#ffffff;
 }
 
 /***** HomePage *****/
@@ -9,11 +9,35 @@ body {
 }
 
     #main #top {
-        height: 700px;
+        height: 800px;
         background: transparent url(/assets/me_01.jpg) no-repeat center center;
         background-size: cover;
         position: relative;
     }
+    
+      #main #top h1#first_name {
+        font-family: DIN condensed;
+        font-size: 2000%;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        opacity: 0.05;
+        position: absolute;
+        left: 0%;
+        top: 8%;
+      }
+      
+      #main #top h1#last_name {
+        font-family: DIN condensed;
+        font-size: 2000%;
+        color: #ffffff;
+        margin:0;
+        padding:0;
+        opacity: 0.05;
+        position: absolute;
+        right: 0%;
+        bottom: -11.5%;
+      }
 
 /***** Navigation *****/
 .navbar .container-fluid .navbar-collapse a img {
@@ -22,13 +46,13 @@ body {
 /***** Footer *****/
 #footer {
     font-family: Arvo;
-    color: #cdccac;
+    color: #000000;
 }
     #footer .container-fluid{
     }
         #footer .container-fluid .row {
             padding: 10px 30px 00px 30px;
-            background-color: #1f231d;
+            background-color: #ffffff;
         }
             #footer .container-fluid .row .col-md-4 {
             }
@@ -45,28 +69,16 @@ body {
                 }
                 
                 #footer .container-fluid .row .col-md-4 .social-icons {
-                    padding-top: 50px;
+                    width: 300px;
+                    padding-top: 10px;
+                    margin: 0px auto;
                 }
-                
-                .dotted-line {
-                    width: 100%;
-                    height:2px;
-                    display: block;
-                    border-bottom: 2px dotted #cdccac;
-                }
-                
-                .glyphicon-person {
-                    height: 5px;
-                    width: 5px;
-                    background: image-url("sprite.svg") -200px -15px;
-                }
-                
-                
                 
                 .twitter  {
                     height: 55px;
                     width: 55px;
                     background: image-url("sprite.svg") -2px 0;
+                    cursor: pointer;
                 }
                     .twitter:hover  {
                         height: 55px;
@@ -77,6 +89,7 @@ body {
                     height: 55px;
                     width: 55px;
                     background: image-url("sprite.svg") -74px 0;
+                    cursor: pointer;
                 }
                     .instagram:hover  {
                         height: 55px;
@@ -87,12 +100,35 @@ body {
                     height: 55px;
                     width: 55px;
                     background: image-url("sprite.svg") -145px 0;
+                    cursor: pointer;
                 }
                     .facebook:hover  {
                         height: 55px;
                         width: 55px;
                         background: image-url("sprite.svg") -145px -55px;
                     }
+                  .linkedin  {
+                      height: 55px;
+                      width: 55px;
+                      background: image-url("sprite.svg") -214px 0;
+                      cursor: pointer;
+                  }
+                      .linkedin:hover  {
+                          height: 55px;
+                          width: 55px;
+                          background: image-url("sprite.svg") -214px -55px;
+                      }
+                  .github  {
+                      height: 55px;
+                      width: 55px;
+                      background: image-url("sprite.svg") -275px 0;
+                      cursor: pointer;
+                  }
+                      .github:hover  {
+                          height: 55px;
+                          width: 55px;
+                          background: image-url("sprite.svg") -275px -55px;
+                      }
                 .twitter-small {
                     height: 18px;
                     width: 25px;
@@ -127,13 +163,17 @@ body {
 /* vertically align menu items */
 .navbar {
     font-family: Source Sans Pro;
+    font-size: 16px;
 }
+    .navbar-nav {
+      float: right;
+    }
     .navbar .nav li {
         display: inline-block;
     }
     .navbar .nav > li > a {
       float: none;
-      padding: 10px 10px 10px;
+      padding: 10px 8px 10px;
       color: #777;
       text-decoration: none;
       text-shadow: 0 1px 0 white;
@@ -158,7 +198,7 @@ body {
         }
 /* Add spacing */
 .navbar-brand img {
-    margin: -10px 0px 0px 0px;
+    margin: -5px 0px 0px 0px;
 }
 /* Make nav transparent */
 .navbar.transparent.navbar-fixed-top {

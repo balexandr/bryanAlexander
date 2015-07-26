@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107012136) do
+ActiveRecord::Schema.define(version: 20150717020658) do
 
   create_table "comfy_blog_comments", force: true do |t|
     t.integer  "post_id",                      null: false
