@@ -225,6 +225,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.6)
+  rake (~> 10.4.2)
   rspec
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

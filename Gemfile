@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+# Rake for nginx
+gem 'rake', '~> 10.4.2'
+
 gem 'bcrypt'
 
 # Use jquery as the JavaScript library
