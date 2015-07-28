@@ -9,7 +9,9 @@ body {
 }
 
     #main #top {
-        height: 800px;
+        max-width: 100%;
+        min-height: 650px;
+        height: auto;
         background: transparent url(/assets/me_01.jpg) no-repeat center center;
         background-size: cover;
         position: relative;
@@ -70,7 +72,7 @@ body {
                 
                 #footer .container-fluid .row .col-md-4 .social-icons {
                     width: 300px;
-                    padding-top: 10px;
+                    padding-top: 5px;
                     margin: 0px auto;
                 }
                 
