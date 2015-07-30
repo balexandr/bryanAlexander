@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  comfy_route :blog_admin, path: '/admin'
-  comfy_route :blog, path: '/blog'
+  comfy_route :blog_admin, :path => '/admin'
+  comfy_route :blog, :path => '/blog'
 
-  comfy_route :cms_admin, path: '/admin'
+  comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
-  comfy_route :cms, path: '/', sitemap: false
+  comfy_route :cms, :path => '/', :sitemap => false
 
-  # The priority is based upon order of creation: first created ->
-  # highest priority.
+  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
@@ -20,8 +19,7 @@ Rails.application.routes.draw do
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-  # Example resource route (maps HTTP verbs to controller actions
-  # automatically):
+  # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
   # Example resource route with options:

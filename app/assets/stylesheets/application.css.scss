@@ -7,14 +7,19 @@ body {
 #main {
     font-family: Arvo;
 }
-
     #main #top {
         max-width: 100%;
-        min-height: 650px;
+        min-height: 800px;
         height: auto;
         background: transparent url(/assets/me_01.jpg) no-repeat center center;
         background-size: cover;
         position: relative;
+    }
+    
+    @media screen and (max-width: 1680px) {
+      #main #top {
+          min-height: 650px;
+      }
     }
     
       #main #top h1#first_name {
@@ -23,10 +28,10 @@ body {
         color: #ffffff;
         margin: 0;
         padding: 0;
-        opacity: 0.05;
+        opacity: 0.1;
         position: absolute;
         left: 0%;
-        top: 8%;
+        top: 9%;
       }
       
       #main #top h1#last_name {
@@ -35,10 +40,10 @@ body {
         color: #ffffff;
         margin:0;
         padding:0;
-        opacity: 0.05;
+        opacity: 0.1;
         position: absolute;
         right: 0%;
-        bottom: -11.5%;
+        bottom: -14%;
       }
 
 /***** Navigation *****/
