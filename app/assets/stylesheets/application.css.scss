@@ -1,24 +1,39 @@
 
-body {
+body, html {
+    margin: 0px auto;
+    padding: 0px auto;
     background-color:#ffffff;
+}
+
+/* Override p tag due to WYSIWYG */
+p {
+  margin:0;
+  padding:0;
 }
 
 /***** HomePage *****/
 #main {
     font-family: Arvo;
 }
-    #main #top {
+    #container {
         max-width: 100%;
-        min-height: 800px;
+        min-height: 650px;
         height: auto;
-        background: transparent url(/assets/me_01.jpg) no-repeat center center;
-        background-size: cover;
+        //background: transparent url(/assets/me_01.jpg) no-repeat center center;
+        //background-size: cover;
         position: relative;
     }
     
-    @media screen and (max-width: 1680px) {
-      #main #top {
-          min-height: 650px;
+    @media screen and (min-width: 1680px) {
+      #container {
+          min-height: 800px;
+      }
+    }
+    
+    /* iphones */
+    @media screen and (max-width: 640px) {
+      #container {
+          min-height: 300px;
       }
     }
     
@@ -47,9 +62,12 @@ body {
       }
 
 /***** Navigation *****/
-.navbar .container-fluid .navbar-collapse a img {
-    display: block;
+.navbar {
+  z-index:9999;
 }
+  .navbar .container-fluid .navbar-collapse a img {
+      display: block;
+  }
 /***** Footer *****/
 #footer {
     font-family: Arvo;

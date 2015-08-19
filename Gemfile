@@ -21,6 +21,15 @@ gem 'coffee-rails', '~> 4.1.0'
 # Rake for nginx
 gem 'rake', '~> 10.4.2'
 
+# Better errors..duh
+gem 'better_errors'
+
+# Handle environment configuration variables
+gem "figaro"
+
+# Use Flickr for photos
+gem 'flickraw'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

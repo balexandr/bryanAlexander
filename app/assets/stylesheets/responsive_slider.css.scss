@@ -1,0 +1,45 @@
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  max-height: 650px;
+  padding: 0;
+  margin: 0;
+  }
+  /* Large desktop monitors */
+  @media screen and (min-width: 1680px) {
+    .rslides {
+        max-height: 800px;
+    }
+  }
+  
+  /* iphones */
+  @media screen and (max-width: 640px) {
+    .rslides {
+        max-height: 300px;
+    }
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
