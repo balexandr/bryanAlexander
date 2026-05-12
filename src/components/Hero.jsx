@@ -4,11 +4,9 @@ function Hero() {
       <div className="hero-content">
         <p className="hero-intro">Bryan Alexander</p>
         <h1 className="hero-title">
-          <span className="hero-line">Creative</span>
-          <span className="hero-line">
-            Developer <span className="hero-ampersand">&</span>
-          </span>
-          <span className="hero-line hero-italic">Designer</span>
+          <span className="hero-line">Still Cheaper</span>
+          <span className="hero-line">Than an</span>
+          <span className="hero-line hero-italic">Agency</span>
         </h1>
         <div className="hero-footer">
           <div className="hero-status">
@@ -19,7 +17,7 @@ function Hero() {
             <span className="scroll-line"></span>
             <span className="scroll-text">Scroll</span>
           </div>
-          <a href="#projects" className="hero-cta">View work ↗</a>
+          <a href="#work" className="hero-cta">View work ↗</a>
         </div>
       </div>
     </section>

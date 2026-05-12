@@ -1,16 +1,20 @@
 import { useState } from 'react'
 
 function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    const form = e.target
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    })
+      .then((res) => {
+        if (res.ok) setSubmitted(true)
+      })
+      .catch(() => {})
   }
 
   return (
@@ -18,7 +22,7 @@ function Contact() {
       <div className="contact-layout">
         <div className="contact-left">
           <div className="about-header">
-            <span className="section-number">03</span>
+            <span className="section-number">04</span>
             <h2>Say hello</h2>
           </div>
           <p className="contact-blurb">
@@ -26,9 +30,9 @@ function Contact() {
             Let's make something worth talking about.
           </p>
           <div className="contact-links">
-            <a href="mailto:hello@example.com">hello@example.com</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:bryanau@gmail.com">bryanau@gmail.com</a>
+            <a href="https://github.com/balexandr" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://linkedin.com/in/bryanalexandr" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
           </div>
         </div>
         <div className="contact-right">
@@ -38,39 +42,26 @@ function Contact() {
               <p>Message sent. I'll be in touch soon.</p>
             </div>
           ) : (
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form
+              className="contact-form"
+              action="https://formsubmit.co/bryanau@gmail.com"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="_subject" value="New message from bryanalexander.co" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <div className="form-group">
                 <label htmlFor="name">Name</label>
-                <input
-                  id="name"
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
+                <input id="name" type="text" name="name" required />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
+                <input id="email" type="email" name="email" required />
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                />
+                <textarea id="message" name="message" rows="4" required />
               </div>
               <button type="submit" className="btn">Send it ↗</button>
             </form>

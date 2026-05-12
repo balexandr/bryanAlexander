@@ -18,7 +18,7 @@ function Navbar() {
       </button>
       <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-        <li><a href="#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
+        <li><a href="#work" onClick={() => setMenuOpen(false)}>Work</a></li>
         <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
       </ul>
     </nav>
