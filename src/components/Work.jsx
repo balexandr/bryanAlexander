@@ -9,10 +9,10 @@ function Work() {
       status: 'Coming Soon',
     },
     {
-      title: 'Justine Giordano',
+      title: 'Justine Giordano Art',
       description: 'Portfolio site for a Philadelphia-based abstract artist inspired by oceans, weather, and nature.',
       url: 'https://www.justinegiordano.com/',
-      image: 'https://placehold.co/600x400/edeae4/5a6340?text=Justine+Giordano',
+      image: 'https://placehold.co/600x400/edeae4/5a6340?text=Justine+Giordano+Art',
       tags: ['Portfolio', 'Art'],
       status: 'Coming Soon',
     },

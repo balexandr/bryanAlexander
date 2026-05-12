@@ -4,7 +4,7 @@ function Hero() {
       <div className="hero-content">
         <p className="hero-intro">Bryan Alexander</p>
         <h1 className="hero-title">
-          <span className="hero-line">Still Cheaper</span>
+          <span className="hero-line">Still Cooler</span>
           <span className="hero-line">Than an</span>
           <span className="hero-line hero-italic">Agency</span>
         </h1>

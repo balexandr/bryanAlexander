@@ -9,7 +9,7 @@ function About() {
         <div className="about-text">
           <p className="about-lead">
             15+ years of shipping software, zero LinkedIn influencer posts.
-            I'm a <em>Senior Software Engineer</em> out of Philly who'd rather
+            I'm a <em>Full-Stack Software Engineer</em> out of Philly who'd rather
             write clean code than a catchy standup update.
           </p>
           <p>
