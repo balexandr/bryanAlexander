@@ -1,5 +1,15 @@
+import evoMedicalSupplier from '../assets/evo_medical_supplier.png'
+
 function Work() {
   const sites = [
+    {
+      title: 'Evolution Medical Supplier',
+      description: 'A fast, clean healthcare storefront built to showcase medical supplies with responsive layout and modern product discovery.',
+      url: 'https://evomedicalsupplier.com/',
+      image: evoMedicalSupplier,
+      tags: ['Healthcare', 'React'],
+      status: 'Live',
+    },
     {
       title: 'Wild Restore',
       description: 'Website for Wildlife Restoration Partnerships — protecting and restoring wildlife around the world.',
