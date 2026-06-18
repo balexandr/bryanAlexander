@@ -1,4 +1,6 @@
 import evoMedicalSupplier from '../assets/evo_medical_supplier.png'
+import tarynMcCarty from '../assets/taryn_mccarty.png'
+import noodleGames from '../assets/noodle_games.png'
 
 function Work() {
   const sites = [
@@ -8,6 +10,22 @@ function Work() {
       url: 'https://evomedicalsupplier.com/',
       image: evoMedicalSupplier,
       tags: ['Healthcare', 'React'],
+      status: 'Live',
+    },
+    {
+      title: 'Taryn McCarty',
+      description: 'Personal portfolio for a venture architect and founding partner of Ventnor Ventures — 2024 Nasdaq Women to Watch with 15+ years in emerging tech and esports.',
+      url: 'https://tarynmccarty.com/',
+      image: tarynMcCarty,
+      tags: ['Portfolio', 'React'],
+      status: 'Live',
+    },
+    {
+      title: 'Noodle Games',
+      description: 'Daily mini-game hub — a suite of quick, no-login puzzle games served fresh every day.',
+      url: 'https://noodlegames.co/',
+      image: noodleGames,
+      tags: ['React', 'Games'],
       status: 'Live',
     },
     {
