@@ -1,9 +1,18 @@
 import evoMedicalSupplier from '../assets/evo_medical_supplier.png'
 import tarynMcCarty from '../assets/taryn_mccarty.png'
 import noodleGames from '../assets/noodle_games.png'
+import greenskeeper from '../assets/greenskeeper.png'
 
 function Work() {
   const sites = [
+    {
+      title: 'Greenskeeper',
+      description: 'Production monitoring, alerting, and security scanning for engineering teams too small to have a dedicated ops person. Live in under a day.',
+      url: 'https://greenskeeper.dev/',
+      image: greenskeeper,
+      tags: ['SaaS', 'NestJS'],
+      status: 'Live',
+    },
     {
       title: 'Evolution Medical Supplier',
       description: 'A fast, clean healthcare storefront built to showcase medical supplies with responsive layout and modern product discovery.',
