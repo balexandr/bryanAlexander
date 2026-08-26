@@ -10,6 +10,16 @@
   background: transparent;
   z-index: 100;
   mix-blend-mode: normal;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar.scrolled {
+  /* Solid, not blurred: .navbar-links becomes position:fixed on mobile
+     when the menu is open, and backdrop-filter on an ancestor turns that
+     ancestor into the containing block for fixed descendants, which would
+     collapse the full-screen mobile menu to 0 height. Keep this plain. */
+  background: var(--bg);
+  box-shadow: 0 1px 0 var(--border);
 }
 
 .navbar-brand {
@@ -248,7 +258,19 @@
 
 @media (max-width: 640px) {
   .hero {
+    /* .hero uses align-items: center inside min-height: 100vh, so on
+       desktop the section is taller than its content and centering looks
+       right. On mobile the content is short enough relative to the
+       viewport that centering was adding ~80px of dead space above the
+       heading on top of the padding, on top of the fixed navbar. Dropping
+       min-height so the box hugs its content removes that phantom gap;
+       padding-top (still 7rem, same as it always was) is what actually
+       controls the space below the fixed nav now. */
+    min-height: auto;
     padding: 7rem 1.5rem 3rem;
+  }
+  .hero-intro {
+    margin-bottom: 1rem;
   }
   .hero-footer {
     flex-direction: column;
